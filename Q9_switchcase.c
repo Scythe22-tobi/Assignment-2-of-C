@@ -1,0 +1,34 @@
+#include<stdio.h>
+int main()
+{
+	/*Q9.Scan 2 integers from user.Then scan a choice also from user.
+	If user enters 1 as a choice,print addition of first 2 integers.
+	Otherwise print subtraction of 2 integers.*/
+	
+	int num1,num2;
+	
+	printf("\nEnter two integers=");
+	scanf("%d%d",&num1,&num2);
+	
+	int choice;
+	printf("\nEnter 1 for addition and 2 for subtraction=");
+	scanf("%d",&choice);
+	
+	switch(choice)
+	{
+		case 1:
+				printf("\nThe addition = %d",num1+num2);
+				break;
+		
+		case 2:
+				printf("\nThe subtraction = %d",num1-num2);
+				break;
+				
+		default:
+				printf("\nInvalid input");
+				break;
+	}
+	
+	return 0;
+
+}
